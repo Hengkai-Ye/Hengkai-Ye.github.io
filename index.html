@@ -123,11 +123,43 @@
     <hr>
     <h2>Publications</h2>
     <ol reversed>
+      </div>
+      <li class=collapsible>
+        <span class=pub-title>
+          BET: Black-box Efficient Testing for Convolutional Neural Networks
+        </span>
+        <!--
+        <span class=pub-links>
+          <a href="papers/dong:browser-isolation.pdf.html"><img alt="Paper" src="images/file.svg" height=15px></a>
+        </span>
+        -->
+        <br>
+        <span class=pub-author>
+          Jialai Wang, Han Qiu, Yi Rong, Hengkai Ye, Qi Li, Zongpeng Li and Chao Zhang
+        </span>
+        <br>
+        In <span class=pub-conf>
+          Proceedings of the 31th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA'22) 
+        </span>
+      </li>
+      <div class=content>
+        Testing Convolutional neural networks (CNNs) to find defects (e.g. error-inducing inputs) before deploying them in 
+        security-sensitive scenarios is crucial. Although existing white-box testing methods can effectively test CNN models with 
+        high coverage achieved, requiring full knowledge of target CNN models which may not always be available in privacy-sensitive 
+        scenarios. In this paper, we propose a novel Black-box Efficient Testing (BET) method for CNN models. The core insight of BET 
+        is that CNNs are generally prone to be affected by continuous perturbations. Thus, by generating such continuous perturbations 
+        in a black-box manner, we design a tunable objective function to guide our testing process for thoroughly exploring defects 
+        in different decision boundaries of target CNN models. We also design an efficiency-centric policy to find more error-inducing 
+        inputs with a fixed query budget. We conduct extensive evaluations with three well-known datasets and five popular CNN 
+        structures. The results show that BET significantly outperforms existing white-box or black-box testing methods considering 
+        the effective error-inducing inputs found in a fixed query/inference budget. We further show that the error-inducing inputs 
+        found by BET can be used to fine-tune the target model to improve the accuracy by up to 3%.
+      </div>
 
       </div>
       <li class=collapsible>
         <span class=pub-title>
-          Interpreting deep learning-based vulnerability detector predictions based on heuristic searching
+          Interpreting Deep Learning-based Vulnerability Detector Predictions Based on Heuristic Searching
         </span>
         <!--
         <span class=pub-links>
