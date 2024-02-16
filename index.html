@@ -328,6 +328,25 @@
     }
   </script>
 
+<h2>AJAX Test for Same Origin Policy</h2>
+
+<button type="button" onclick="loadDoc()">Send AJAX Request</button>
+
+<p id="demo"></p>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://www.youtube.com/watch?v=bSJm8-zJTzQ&t=17s&ab_channel=LiveOverflow", true);
+  xhttp.send();
+}
+</script>
+
 </html>
 
 
