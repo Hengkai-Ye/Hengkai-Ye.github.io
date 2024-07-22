@@ -99,7 +99,7 @@
           Ph.D. Candidate<br>
           College of Information Sciences and Technology<br>
           The Pennsylvania State University<br><br>
-          E-mail: hfy5130 at psu dot edu<br>
+          E-mail: hengkai at psu dot edu<br>
           <!--
           <br>
           <a href=cv/cv.pdf.html>CV</a>
@@ -128,6 +128,35 @@
     </div>
     <li class=collapsible>
       <span class=pub-title>
+        Too Subtle to Notice: Investigating Executable Stack Issues in Linux System (To Appear)
+      </span>
+      
+      <!-- <span class=pub-links>
+        <a href="https://github.com/PSU-Security-Universe/viper"><img alt="Website" src="images/www.svg" height=15px></a>
+        <a href="slides/viper-slides.pdf"><img alt="Slides" src="images/slides.svg" height=15px></a>
+        <a href="papers/security23-viper.pdf"><img alt="Paper" src="images/file.svg" height=15px></a>
+      </span> -->
+     
+      <br>
+      <span class=pub-author>
+        <b>Hengkai Ye</b> and Hong Hu
+      </span>
+      <br>
+      In <span class=pub-conf>
+        Proceedings of the 32th Annual Network and Distributed System Security Symposium (NDSS 2025)
+      </span>
+    </li>
+    <div class=content>
+      Code injection was a favored technique for attackers to exploit buffer overflow vulnerabilities decades ago. Subsequently, the widespread adoption of lightweight solutions like write-xor-execute (W⊕X) effectively mitigated most of these attacks by disallowing writable-and-executable memory. However, we observe multiple concerning cases where software developers accidentally disabled W⊕X and reintroduced executable stacks to popular applications. Although each individual violation has been properly fixed, a lingering question remains: what underlying factors contribute to these recurrent mistakes among developers, even in contemporary software development practices?
+
+      In this paper, we conduct two investigations aimed at gaining a comprehensive understanding of the challenges associated with properly enforcing W⊕X in Linux systems. First, we delve into program-hardening tools to assess whether experienced security developers consistently catch the necessary steps to avoid executable stacks. Second, we analyze the enforcement of W⊕X on Linux by inspecting the source code of the compilation toolchain, the kernel and the loader. Our investigation reveals that properly enforcing W⊕X on Linux requires close collaboration among multiple components. These tools form a complex chain of trust and dependency to safeguard the program stack. However, developers, including security researchers, may overlook the subtle yet essential .note.GNU-stack section when writing assembly code for various purposes, and inadvertently introduce executable stacks. For example, 11 program-hardening tools implemented as inlined reference monitors (IRM) introduce executable stacks to all hardened applications. Based on these findings, we discuss potential exploitation scenarios by attackers and provide suggestions to mitigate this issue.
+      <br/>
+      <p></p>
+    </div>
+
+    </div>
+    <li class=collapsible>
+      <span class=pub-title>
         VIPER: Spotting Syscall-Guard Variables for Data-Only Attacks
       </span>
       
@@ -143,7 +172,7 @@
       </span>
       <br>
       In <span class=pub-conf>
-        Proceedings of the 32nd USENIX Security Symposium (Security'23) 
+        Proceedings of the 32nd USENIX Security Symposium (Security 2023) 
       </span>
     </li>
     <div class=content>
@@ -187,7 +216,7 @@
       </span>
       <br>
       In <span class=pub-conf>
-        Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA'22) 
+        Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2022) 
       </span>
     </li>
     <div class=content>
@@ -278,6 +307,9 @@
         Network and Distributed System Security Symposium (NDSS)
         <span style="float:right;">[2023, 2024, 2025]</span><br>
       </li>
+      <li><strong>Artifact Evaluation Committee</strong><br>
+        Network and Distributed System Security Symposium (NDSS)
+        <span style="float:right;">[2025]</span><br>        
     </ul>
     <hr>
 
