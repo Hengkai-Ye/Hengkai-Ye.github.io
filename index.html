@@ -127,6 +127,36 @@
     </div>
     <li class=collapsible>
       <span class=pub-title>
+        SACK: Systematic Generation of Function Substitution Attacks Against Control-Flow Integrity
+      </span>
+
+      <!-- <span class=pub-links>
+        <a href="https://github.com/PSU-Security-Universe/badass"><img alt="Website" src="images/www.svg" height=15px></a>
+        <a href="slides/badass-slides.pdf"><img alt="Slides" src="images/slides.svg" height=15px></a>
+        <a href="papers/ndss25-badass.pdf"><img alt="Paper" src="images/file.svg" height=15px></a>
+      </span> -->
+  
+      <br>
+      <span class=pub-author>
+        Zhechang Zhang, <b>Hengkai Ye</b> and Hong Hu
+      </span>
+      <br>
+      In <span class=pub-conf>
+        Proceedings of the 33th Annual Network and Distributed System Security Symposium (NDSS 2026)
+      </span>
+    </li>
+    <div class=content>
+      Control-flow integrity (CFI) is a widely adopted defense against control-flow hijacking attacks, designed to restrict indirect control transfers to a set of legitimate targets. However, even under a precise static CFI policy, attackers can still hijack control flow through function substitution attacks (Sub attacks), by replacing one valid target with another that remains within the allowed set. While prior work has demonstrated the feasibility of such attacks through manual construction, their practical prevalence and systematic generation remain largely unexplored.
+
+      In this work, we present SACK, the first systematic framework for automatically constructing Sub attacks at scale. SACK collects triggered indirect call targets from benign executions and synthesizes security oracles with the assistance of a large language model. It then automatically performs target substitutions and leverages security oracles to detect security violations, while ensuring that execution strictly adheres to precise CFI policies. We apply SACK to seven widely used applications and successfully construct 419 Sub attacks that compromise critical security features. We further develop five end-to-end exploits based on historical bugs in SQLite3, V8 and Nginx, enabling arbitrary command execution or authentication bypass. Our results demonstrate that Sub attacks are practical, prevalent, and systematically constructible, posing a serious threat even under ideal CFI enforcement.
+      <br/>
+      <p></p>
+    </div>
+
+
+    </div>
+    <li class=collapsible>
+      <span class=pub-title>
         Too Subtle to Notice: Investigating Executable Stack Issues in Linux System
       </span>
 
