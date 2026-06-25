@@ -42,7 +42,7 @@
     }
 
     .wrap {
-      max-width: 880px;
+      max-width: 1040px;
       margin: 0 auto;
       padding: 2.5rem 1.5rem 4rem;
     }
@@ -202,16 +202,21 @@
       color: var(--text);
     }
 
+    .publication-item,
     .collapsible {
-      cursor: pointer;
       list-style-position: outside;
       padding: 0.85rem 0.85rem;
       margin: 0 0 0.65rem !important;
       border-radius: var(--radius-sm);
       border: 1px solid transparent;
+    }
+
+    .collapsible {
+      cursor: pointer;
       transition: background 0.15s ease, border-color 0.15s ease;
     }
 
+    .publication-item::after,
     .collapsible::after {
       content: "";
       display: table;
@@ -382,6 +387,20 @@
         <h2>Publications</h2>
         <h3>Conference Proceedings</h3>
         <ol reversed>
+          <li class="publication-item">
+            <span class="pub-title">
+              NCFuzz: Configuration-guided Network Service Fuzzing
+            </span>
+            <br>
+            <span class="pub-author">
+              Xuesong Bai, <b>Hengkai Ye</b>, Shenghan Zheng, Fenglu Zhang, Hong Hu and Zhou Li
+            </span>
+            <br>
+            In <span class="pub-conf">
+              Proceedings of the 35th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2026)
+            </span>
+          </li>
+
           <li class="collapsible">
             <span class="pub-title">
               SACK: Systematic Generation of Function Substitution Attacks Against Control-Flow Integrity
@@ -656,6 +675,8 @@
             USENIX Security Symposium
             <span class="meta-right">2025, 2026</span><br>
             Applied Cryptography and Network Security
+            <span class="meta-right">2026</span><br>
+            Research in Attacks, Intrusions and Defenses (RAID)
             <span class="meta-right">2026</span><br>
           </li>
           <li><strong>Artifact Evaluation Committee</strong><br>
